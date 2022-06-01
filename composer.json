@@ -1,0 +1,31 @@
+{
+    "name": "name/name",
+    "license": "GPL-3.0",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "name",
+            "email": "name@name.name"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "composer\/installers": "1.x"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "PLUGIN_NAME\\Engine\\": "inc\/",
+            "PLUGIN_NAME\\Admin\\": "admin\/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "ergebnis/composer-normalize": true,
+            "phpro/grumphp": true
+        }
+    }
+}
